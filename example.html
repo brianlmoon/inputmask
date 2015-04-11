@@ -12,7 +12,7 @@
                 type="text"
                 pattern="^(\d+|\d+\.\d\d)$"
                 data-mask="^\d+\.?\d?\d?$"
-                id="currence">
+                id="currency">
             <br>
             <br>
             <strong>Numeric</strong><br>
@@ -26,15 +26,16 @@
             <strong>Date (YYYY-MM-DD)</strong><br>
             <input
                 type="text"
-                data-mask="^\d{4}-?[0-1]?\d?-?[0-3]?\d?$"
+                data-mask="^(\d{1,4}|\d{1,4}-|\d{1,4}-[0-1]|\d{1,4}-[0-1]\d|\d{1,4}-[0-1]\d-|\d{1,4}-[0-1]\d-[0-3]|\d{1,4}-[0-1]\d-[0-3]\d)?$"
                 id="date">
             <br>
             <br>
             <script type="text/javascript">
-            new inputMask(document.getElementById("test"));
+            new inputMask(document.getElementById("currency"));
             new inputMask(document.getElementById("number"));
             new inputMask(document.getElementById("date"));
             </script>
         </form>
     </body>
 </html>
+
