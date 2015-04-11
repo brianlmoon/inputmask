@@ -54,7 +54,6 @@
         this.input = input;
 
         this.handleKey = function(ev) {
-            console.log(ev);
             if(modifierState.ctrl || modifierState.command) {
                 return;
             }
